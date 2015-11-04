@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тестовое задание iFrog</title>
+	<link rel="stylesheet" href="css/selectordie.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="popup_overlay">
+		<div class="popup greeting animated fadeIn">
+			<h1>Привет, <span>username</span>!</h1>
+			<button data-name="user_data">Давай знакомиться!</button>
+		</div>
+		<div class="popup user_data">
+			<h2>Заполните данные</h2>
+			<form action="#">
+				<input type="text" placeholder="Имя" id="name">
+				<select name="sex" id="sex">
+					<option value="Мужчина">Мужчина</option>
+					<option value="Женщина">Женщина</option>
+				</select>
+				<h3>Ваш возраст: <span class="age_result"></span></h3>
+				<input type="range" min="0" max="100" step="1" value="50">
+				<h3>Кто вам больше нравится:</h3>
+				<input type="radio" name="like" id="cat" value="Коты"><label for="cat">Коты</label><br />
+				<input type="radio" name="like" id="people" value="Люди"><label for="people">Люди</label><br />
+				<input type="radio" name="like" id="alien" value="Инопланетяне"><label for="alien">Инопланетяне</label><br />
+				<button data-name="result">Отправить</button>
+			</form>
+		</div>
+		<div class="popup result">
+			<h2>Привет, <span class="user_name"></span>!</h2>
+			<p>Ваш пол: <span class="sex"></span></p>
+			<p>Ваш возраст: <span class="age"></span></p>
+			<p>Больше всего вы любите: <span class="like"></span></p>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/selectordie.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
